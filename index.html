@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Bicicletas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
+</head>
+<body>
+    <div><h1>Tienda Bicicletas - Sección Clientes VIP</h1></div>
+    <p><b>Registro de Clientes</b></p>
+
+    <input type="number" id="miId" placeholder="Escribir Id numérico">
+    <input type="text" id="name" placeholder="Escribir Nombre del cliente">
+    <input type="text" id="miEmail" placeholder="Email">
+    <input type="number" id="miAge" placeholder="Edad">
+
+    <button onclick="registrar()"> Registrar Cliente</button>
+    <div id="idRegistro"></div>
+    
+    <p><b>Comprobar Clientes</b></p>
+    <button onclick="obtenerItems()"> Mostrar Clientes</button>
+    <div id="miResultado"></div>
+
+    <p><b>Editar Clientes</b></p>
+    <button onclick="actualizar()"> Actualizar Clientes</button>
+    <div id="idActualizar"></div>
+</body>
+</html>
